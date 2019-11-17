@@ -1,10 +1,49 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@media (min-width: 992px){
+  .container {
+    width: 970px;
+  }
+  
+  .col-md-4{
+  width: 33.3333333333%;
+  }
+  
+  .col-md-4, .co-md-7{
+  float: left;
+  }  
+
+
+  
+}
+
+@media (min-width: 768px){
+
+  
+  .container, .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
 /* 共通 */
+
+
+
+.navbar-inverse {
+  background-color: teal;
+}
+
 
 body {
   padding-top: 60px;
+
 }
 
 section {
@@ -14,6 +53,12 @@ section {
 textarea {
   resize: vertical;
 }
+
+
+.div {
+  display: block;
+}
+
 
 .center {
   text-align: center;
@@ -57,14 +102,32 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  font-style: italic;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
 }
 
+li .header-list {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+li .header-list:hover {
+  color: silver !important;
+}
+
+li .dropdown-header {
+  background-color: rgba(200,200,200,0.5);
+      font-weight: bold;
+}
+
+#dropdown-title {
+  background-color: teal;
+}
+
 #logo:hover {
-  color: #fff;
+  color: silver;
   text-decoration: none;
 }
 
@@ -95,4 +158,68 @@ p {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* ユーザー一覧ページ */
+#table-users {
+  td {
+    vertical-align: middle;
+  }  
+}
+
+/* トップページ */
+#top-main-title {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.jombotron{
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+
+.jombotron h1{
+    font-size:63px;
+  }
+
+.jombotron p{
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:after {
+    clear: both;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.form {
+  display: block;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  color: silver;
+}
+
+
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
